@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="UTF-8" />
+  <title>Simon Niyomugabo | Data Analyst & SQL Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-alt: #0b1020;
+      --card: #111827;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --danger: #f97373;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.85);
+      --shadow-subtle: 0 10px 30px rgba(15, 23, 42, 0.7);
+      --transition: 200ms ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 12px;
+      background: radial-gradient(circle at 20% 0, #38bdf8, #0ea5e9 40%, #0369a1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.3),
+        0 12px 30px rgba(15, 23, 42, 0.9);
+      font-weight: 700;
+      font-size: 18px;
+      color: #e5f3ff;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .logo-text span:first-child {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .logo-text span:last-child {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    nav a {
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: background var(--transition), color var(--transition),
+        border-color var(--transition), transform var(--transition);
+    }
+
+    nav a:hover {
+      background: rgba(15, 23, 42, 0.9);
+      border-color: rgba(55, 65, 81, 0.9);
+      color: #e5e7eb;
+      transform: translateY(-1px);
+    }
+
+    /* Hero */
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.4fr);
+      gap: 32px;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+
+    .hero-main {
+      background: radial-gradient(circle at top left, #0f172a 0, #020617 55%);
+      border-radius: 26px;
+      padding: 24px 22px;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 14px;
+    }
+
+    .hero-pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.18);
+    }
+
+    .hero-title {
+      font-size: clamp(26px, 4vw, 32px);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(120deg, #38bdf8, #a855f7);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 520px;
+      margin-bottom: 18px;
+    }
+
+    .hero-subtitle strong {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      color: #9ca3af;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #0b1120;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      box-shadow: 0 14px 35px rgba(8, 47, 73, 0.9);
+      transition: transform var(--transition), box-shadow var(--transition),
+        filter var(--transition);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 45px rgba(8, 47, 73, 1);
+      filter: brightness(1.05);
+    }
+
+    .btn-ghost {
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      color: #e5e7eb;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: background var(--transition), border-color var(--transition),
+        transform var(--transition), box-shadow var(--transition);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(15, 23, 42, 1);
+      border-color: rgba(75, 85, 99, 1);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-meta-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.7);
+    }
+
+    .hero-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top, #020617 0, #020617 55%);
+      border-radius: 22px;
+      padding: 16px 16px 14px;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      box-shadow: var(--shadow-subtle);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .hero-card-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .hero-card-badge {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      font-size: 10px;
+      color: #9ca3af;
+    }
+
+    .hero-metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .hero-metric-label {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .hero-metric-value {
+      font-size: 18px;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .hero-metric-sub {
+      font-size: 10px;
+      color: #6b7280;
+    }
+
+    .hero-skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .hero-skill-chip {
+      font-size: 10px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      color: #9ca3af;
+    }
+
+    .hero-card-footer {
+      margin-top: 10px;
+      font-size: 10px;
+      color: #6b7280;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero-card-footer span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-card-footer-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+
+    /* Sections */
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 14px;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #9ca3af;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: radial-gradient(circle at top, #020617 0, #020617 55%);
+      border-radius: var(--radius-lg);
+      padding: 16px 16px 14px;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card-body {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .list-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    .list-inline span {
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    /* Skills */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    .skills-list span {
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    /* Projects */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .project-card {
+      background: radial-gradient(circle at top, #020617 0, #020617 55%);
+      border-radius: var(--radius-lg);
+      padding: 14px 14px 12px;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-pill {
+      font-size: 10px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      color: #9ca3af;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .project-pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #38bdf8;
+    }
+
+    .project-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .project-body {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .project-meta {
+      font-size: 11px;
+      color: #6b7280;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+      font-size: 10px;
+      color: #9ca3af;
+    }
+
+    .project-tags span {
+      padding: 3px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .project-impact {
+      margin-top: 6px;
+      font-size: 11px;
+      color: #e5e7eb;
+    }
+
+    /* Contact */
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
+      gap: 16px;
+      align-items: center;
+    }
+
+    .contact-main {
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    .contact-main strong {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .contact-link {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      color: #e5e7eb;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background var(--transition), border-color var(--transition),
+        transform var(--transition), box-shadow var(--transition);
+    }
+
+    .contact-link:hover {
+      background: rgba(15, 23, 42, 1);
+      border-color: rgba(75, 85, 99, 1);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .contact-note {
+      font-size: 11px;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 11px;
+      color: #4b5563;
+      text-align: center;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 840px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-aside {
+        order: -1;
+      }
+
+      .section-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .contact-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 520px) {
+      main {
+        padding-inline: 16px;
+      }
+
+      .hero-main {
+        padding: 18px 16px;
+      }
+
+      .card,
+      .project-card {
+        padding-inline: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo">
+        <div class="logo-mark">S</div>
+        <div class="logo-text">
+          <span>Simon Niyomugabo</span>
+          <span>Data Analyst & SQL Developer</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-main">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          Open to data analyst & SQL roles
+        </div>
+        <h1 class="hero-title">
+          I turn raw data into <span>clear, actionable insights.</span>
+        </h1>
+        <p class="hero-subtitle">
+          I’m <strong>Simon Niyomugabo</strong>, a data analyst and SQL developer who loves
+          building clean datasets, insightful dashboards, and analytics workflows that
+          actually move business metrics.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">SQL · PostgreSQL · MySQL</span>
+          <span class="hero-tag">Power BI · Excel</span>
+          <span class="hero-tag">Data Cleaning & ETL</span>
+          <span class="hero-tag">Dashboarding & Reporting</span>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+            View analytics projects →
+          </button>
+          <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Contact me
+          </button>
+        </div>
+        <div class="hero-meta">
+          <span><span class="hero-meta-dot"></span> Focused on SQL‑first analytics</span>
+          <span><span class="hero-meta-dot"></span> Strong interest in business impact</span>
+        </div>
+      </div>
+
+      <aside class="hero-aside">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div>
+              <div class="hero-card-title">Analytics snapshot</div>
+              <div style="font-size:11px;color:#6b7280;">What I like to measure</div>
+            </div>
+            <div class="hero-card-badge">Data‑driven</div>
+          </div>
+          <div class="hero-metric-row">
+            <div>
+              <div class="hero-metric-label">Revenue opportunity identified</div>
+              <div class="hero-metric-value">+12%</div>
+              <div class="hero-metric-sub">Retail sales optimization</div>
+            </div>
+            <div>
+              <div class="hero-metric-label">Manual work reduced</div>
+              <div class="hero-metric-value">‑80%</div>
+              <div class="hero-metric-sub">SQL automation</div>
+            </div>
+          </div>
+          <div class="hero-skill-chips">
+            <span class="hero-skill-chip">CTEs & window functions</span>
+            <span class="hero-skill-chip">Data quality checks</span>
+            <span class="hero-skill-chip">Churn segmentation</span>
+          </div>
+          <div class="hero-card-footer">
+            <span><span class="hero-card-footer-dot"></span> Built with SQL‑first thinking</span>
+            <span>End‑to‑end analytics mindset</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-header">
+        <h2 class="section-title">About</h2>
+        <p class="section-subtitle">Who I am and how I think about data.</p>
+      </div>
+      <div class="section-grid">
+        <div class="card">
+          <h3 class="card-title">A bit about me</h3>
+          <p class="card-body">
+            <p>I’m Simon Niyomugabo — a Data Analyst and SQL Developer who turns complex data into clear, actionable insights. I specialize in SQL, Power BI, and Python, and I build analytics solutions that help teams make smarter, faster decisions. I take pride in solving real business problems with clean data, strong logic, and meaningful visualizations.</p>
+
+          <p class="card-body">
+            My favorite work sits at the intersection of <strong>SQL, analytics, and
+            business impact</strong>—whether that’s understanding why customers churn,
+            where revenue is leaking, or which products are quietly driving growth.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">How I like to work</h3>
+          <p class="card-body">
+            I approach problems by first clarifying the question, then exploring the data,
+            and only then building dashboards or reports. I value reproducible workflows,
+            clean SQL, and documentation that others can follow.
+          </p>
+          <div class="list-inline">
+            <span>Ask good questions first</span>
+            <span>Make data trustworthy</span>
+            <span>Explain insights clearly</span>
+            <span>Automate repeatable work</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Tools and capabilities I use to deliver insights.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="card">
+          <h3 class="card-title">Technical skills</h3>
+          <div class="skills-list">
+            <span>SQL (PostgreSQL, MySQL, SQL Server)</span>
+            <span>Complex joins & subqueries</span>
+            <span>CTEs & window functions</span>
+            <span>Data cleaning & transformation</span>
+            <span>Database design & normalization</span>
+            <span>Indexing & query optimization</span>
+            <span>Excel (PivotTables, Power Query)</span>
+            <span>Power BI / dashboarding</span>
+            <span>Basic Python for analysis (Pandas)</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Analytics & soft skills</h3>
+          <div class="skills-list">
+            <span>Exploratory data analysis</span>
+            <span>Churn & cohort analysis</span>
+            <span>Business metrics & KPIs</span>
+            <span>Storytelling with data</span>
+            <span>Stakeholder communication</span>
+            <span>Attention to detail</span>
+            <span>Problem‑solving mindset</span>
+            <span>Documentation & reproducibility</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Realistic, SQL‑driven analytics work with clear business outcomes.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-pill">
+            <span class="project-pill-dot"></span>
+            End‑to‑end analytics pipeline
+          </div>
+          <h3 class="project-title">Retail Sales Performance Dashboard</h3>
+          <p class="project-body">
+            Built a complete analytics workflow to evaluate sales performance across
+            regions, product categories, and time periods. Cleaned and transformed raw
+            CSV data using SQL, then visualized insights in Power BI.
+          </p>
+          <p class="project-meta">
+            Focus: understanding where revenue is growing, where it’s leaking, and how
+            seasonality affects demand.
+          </p>
+          <div class="project-tags">
+            <span>SQL (CTEs & window functions)</span>
+            <span>Data cleaning & transformation</span>
+            <span>Power BI</span>
+            <span>Sales analytics</span>
+          </div>
+          <p class="project-impact">
+            <strong>Impact:</strong> Identified seasonal demand patterns and uncovered a
+            <strong>12% revenue opportunity</strong> by optimizing inventory for
+            high‑growth regions.
+          </p>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-pill">
+            <span class="project-pill-dot"></span>
+            Customer analytics
+          </div>
+          <h3 class="project-title">Customer Churn Prediction & Behavior Analysis</h3>
+          <p class="project-body">
+            Analyzed customer subscription data to identify churn drivers. Used SQL to
+            clean and segment customers, then performed churn analysis and built a simple
+            predictive view.
+          </p>
+          <p class="project-meta">
+            Focus: understanding which behaviors and patterns signal that a customer is
+            likely to leave.
+          </p>
+          <div class="project-tags">
+            <span>SQL joins & segmentation</span>
+            <span>Exploratory data analysis</span>
+            <span>Churn cohorts</span>
+            <span>Visualization</span>
+          </div>
+          <p class="project-impact">
+            <strong>Impact:</strong> Revealed that customers with low engagement in the
+            first 30 days were <strong>3.4× more likely</strong> to churn, helping shape a
+            targeted retention strategy.
+          </p>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-pill">
+            <span class="project-pill-dot"></span>
+            Data quality & automation
+          </div>
+          <h3 class="project-title">Automated SQL Data Cleaning System</h3>
+          <p class="project-body">
+            Developed a reusable SQL script library to clean messy datasets: remove
+            duplicates, standardize formats, validate data types, and flag anomalies
+            before analysis.
+          </p>
+          <p class="project-meta">
+            Focus: making data reliable and analysis‑ready with minimal manual effort.
+          </p>
+          <div class="project-tags">
+            <span>Stored procedures</span>
+            <span>Data validation rules</span>
+            <span>Normalization</span>
+            <span>Automation</span>
+          </div>
+          <p class="project-impact">
+            <strong>Impact:</strong> Reduced manual data‑cleaning time by
+            <strong>80%</strong>, enabling faster reporting cycles for analytics teams.
+          </p>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-pill">
+            <span class="project-pill-dot"></span>
+            Database design
+          </div>
+          <h3 class="project-title">E‑commerce Database Design & Optimization</h3>
+          <p class="project-body">
+            Designed a relational database schema for an online store, including tables
+            for customers, orders, products, and transactions. Implemented indexing and
+            normalization to improve performance.
+          </p>
+          <p class="project-meta">
+            Focus: creating a scalable, analytics‑friendly data model that supports both
+            operations and reporting.
+          </p>
+          <div class="project-tags">
+            <span>ERD modeling</span>
+            <span>SQL schema design</span>
+            <span>Indexing & optimization</span>
+            <span>Data integrity constraints</span>
+          </div>
+          <p class="project-impact">
+            <strong>Impact:</strong> Improved query performance by <strong>40%</strong>
+            and ensured reliable data for analytics and reporting.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Let’s talk about data, dashboards, and SQL.</p>
+      </div>
+      <div class="card contact-card">
+        <div class="contact-main">
+          <p>
+            If you’re looking for someone who enjoys working directly with SQL, cleaning
+            data, and building clear analytics outputs, I’d be happy to connect.
+          </p>
+          <p style="margin-top:8px;">
+            I’m especially interested in roles focused on <strong>data analytics, BI,
+            and SQL‑heavy workflows</strong> where I can help teams make better decisions
+            with trustworthy data.
+          </p>
+          <p class="contact-note">
+            Prefer email or LinkedIn—happy to share more details, walk through these
+            projects, or discuss how I think about data.
+          </p>
+        </div>
+        <div>
+          <div class="contact-links">
+            <!-- Replace # with your real links when ready -->
+            <a class="contact-link" href="mailto:youremail@example.com">
+              ✉️ Email
+            </a>
+            <a class="contact-link" href="#" target="_blank" rel="noreferrer">
+              💼 LinkedIn
+            </a>
+            <a class="contact-link" href="#" target="_blank" rel="noreferrer">
+              🧾 GitHub / Portfolio Repo
+            </a>
+          </div>
+          <p class="contact-note">
+            Links are placeholders—update them with your real email, LinkedIn, and GitHub.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built by Simon Niyomugabo · Data Analyst & SQL Developer
+    </footer>
+  </main>
+</body>
+</html>
