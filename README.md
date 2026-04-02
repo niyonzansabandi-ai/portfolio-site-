@@ -15,7 +15,8 @@
 
 ## 📸 Project Screenshot
 
-<img src="Screenshot%202026-04-01%20180342.png" width="750px" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);" />
+<img src="Screenshot%202026-04-01%20180124.png" width="750px" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);" />
+
 
 </div>
 
