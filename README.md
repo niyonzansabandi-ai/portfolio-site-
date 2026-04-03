@@ -6,19 +6,23 @@ I focus on transforming raw data into clear insights using SQL, Python, and BI t
 
 ---
 
+---
+
 <div align="center">
-  <img src="Screenshot%202026-04-01%20180124.png" width="750px" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);" />
+  <img src="Screenshot%202026-04-01%20180124.png" width="750px" style="border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);" />
 </div>
 
 ---
 
-## 🚀 About This Portfolio  
-This website was designed to be clean, modern, and easy to navigate.  
-It highlights my strongest work, including dashboards, SQL analysis, and end‑to‑end data projects.
+## 🚀 About This Portfolio
+
+This website was designed to be clean, modern, and easy to navigate. It highlights my strongest work, including dashboards, SQL analysis, and end‑to‑end data projects.
 
 Once deployed, you can view it live here:
 
-🔗 **Live Website:** _Coming soon_
+🔗 **Live Website:** https://gregarious-boba-bbc949.netlify.app
+
+
 
 ---
 
