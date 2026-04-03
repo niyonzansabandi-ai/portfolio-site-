@@ -25,29 +25,37 @@ Once deployed, you can view it live here:
 
 
 ---
+📊 **Featured Projects**
 
-## 📊 Featured Projects  
-
-### **1. Sales Performance Dashboard (Power BI)**  
+### 1. Sales Performance Dashboard — *Power BI*
 - Cleaned and modeled sales data using Power Query  
 - Built interactive dashboards with DAX  
 - Identified revenue trends and customer segments  
 
-### **2. Customer Churn Prediction (Python)**  
+### 2. Customer Churn Prediction — *Python*
 - Used pandas, scikit‑learn, and logistic regression  
 - Achieved strong predictive performance  
 - Visualized churn drivers for business insights  
 
-### **3. Retail SQL Analytics**  
+### 3. Retail SQL Analytics — *SQL*
 - Wrote complex SQL queries (CTEs, window functions)  
 - Analyzed customer behavior and product performance  
 - Delivered actionable insights for decision‑making  
 
 ---
 
-## 🛠️ Tech Stack  
+🛠️ **Tech Stack**
 
-**Languages & Tools:**  
+**Languages:**  
+SQL • Python • DAX • HTML • CSS  
+
+**Tools & Platforms:**  
+Power BI • Excel • GitHub • Netlify  
+
+**Libraries:**  
+pandas • NumPy • scikit‑learn  
+
+ 
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
