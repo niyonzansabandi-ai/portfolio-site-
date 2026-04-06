@@ -1,3 +1,20 @@
+# Customer Churn Prediction
+A machine learning project focused on identifying customers at risk of leaving and providing actionable business insights.
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Pandas](https://img.shields.io/badge/Library-Pandas-green)
+![Scikit--Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+## Table of Contents
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Modeling Approach](#modeling-approach)
+- [Model Performance](#model-performance)
+- [Key Insights from Feature Importance](#key-insights-from-feature-importance)
+- [Business Recommendations](#business-recommendations)
+- [Conclusion](#conclusion)
+- [Technologies Used](#technologies-used)
+- [How to Run the Project](#how-to-run-the-project)
+- [Next Steps](#next-steps)
 # Customer Churn Prediction Project
 
 ## Overview
