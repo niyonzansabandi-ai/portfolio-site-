@@ -84,9 +84,10 @@ This project demonstrates a complete end-to-end machine learning workflow for pr
 - Deploy the model using a simple web app (Streamlit or Flask).
 - Automate weekly churn predictions for real-time business use.
 - Add SHAP values for deeper model interpretability.
+
 ## Contact
 If you would like to connect or discuss this project, feel free to reach out:
 
-- GitHub: YOUR LINK
-- LinkedIn: YOUR LINK
-- Portfolio Website: YOUR LINK
+- GitHub: https://github.com/niyonzansabandi-ai
+- LinkedIn: https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291
+- Portfolio Website: https://YOUR-PORTFOLIO-LINK
