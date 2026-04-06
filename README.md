@@ -78,3 +78,15 @@ This project demonstrates a complete end-to-end machine learning workflow for pr
 1. Install required Python libraries.  
 2. Open the Jupyter Notebook.  
 3. Run the cells in order to reproduce the analysis and results.  
+## Next Steps
+- Add hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
+- Explore additional models such as XGBoost or LightGBM.
+- Deploy the model using a simple web app (Streamlit or Flask).
+- Automate weekly churn predictions for real-time business use.
+- Add SHAP values for deeper model interpretability.
+## Contact
+If you would like to connect or discuss this project, feel free to reach out:
+
+- GitHub: YOUR LINK
+- LinkedIn: YOUR LINK
+- Portfolio Website: YOUR LINK
