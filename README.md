@@ -90,5 +90,6 @@ If you would like to connect or discuss this project, feel free to reach out:
 
 - GitHub: https://github.com/niyonzansabandi-ai
 - LinkedIn: https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291
-- Portfolio Website: [https://gregarious-boba-bbc949.netlify.app](https://gregarious-boba-bbc949.netlify.app)
+- Portfolio Website: https://portfolio-site-a9q.pages.dev
+
 
