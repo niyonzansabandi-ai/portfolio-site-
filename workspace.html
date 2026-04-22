@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workspace | Simon Niyomugabo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f9fc;
+            color: #222;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 30px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0077ff;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 100px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #111;
+        }
+
+        /* HERO */
+        #hero {
+            text-align: center;
+            padding-top: 140px;
+        }
+
+        #hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 20px;
+            color: #444;
+        }
+
+        /* PROJECT CARDS */
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 25px;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .project-card a {
+            color: #0077ff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTACT BUTTONS */
+        .contact-buttons a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 12px 20px;
+            background: #0077ff;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-buttons a:hover {
+            background: #005fcc;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div><strong>Simon Niyomugabo</strong></div>
+        <div>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <h1>Data Analyst & SQL Developer</h1>
+        <p>I turn raw data into clear insights and decision‑ready analytics.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a data analyst who enjoys working directly with SQL, cleaning messy datasets,
+            and building analytics outputs that help teams make better decisions.
+            My focus is on SQL‑heavy workflows, BI dashboards, and practical data storytelling.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>SQL • Python • Power BI • Excel • Data Cleaning • ETL • Analytics</strong></p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Customer Churn Analysis</h3>
+            <p>End‑to‑end analysis using Python, SQL, and visualization to identify churn drivers.</p>
+            <a href="https://github.com/niyonzansabandi-ai/customer-churn">View Project →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>SQL Retail Sales Analysis</h3>
+            <p>Complex SQL queries analyzing sales performance, customer behavior, and product trends.</p>
+            <a href="https://github.com/niyonzansabandi-ai/sql-project">View Project →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Future Project Placeholder</h3>
+            <p>A clean placeholder card to maintain symmetry and prepare for your next project.</p>
+            <a href="#">Coming Soon</a>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Let’s talk about data, dashboards, and SQL.
+            I’m especially interested in roles focused on analytics and SQL‑heavy workflows.
+        </p>
+
+        <div class="contact-buttons">
+            <a href="mailto:niyonzansabandi.ai@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291">LinkedIn</a>
+            <a href="https://github.com/niyonzansabandi-ai/portfolio-site-">Portfolio Repo</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Built by Simon Niyomugabo — Data Analyst & SQL Developer
+    </footer>
+
+</body>
+</html>
