@@ -22,16 +22,22 @@
             border-bottom: 1px solid #ddd;
             padding: 15px 30px;
             z-index: 1000;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        nav .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
         nav a {
-            margin-left: 20px;
             text-decoration: none;
             color: #222;
             font-weight: bold;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -118,7 +124,8 @@
     <!-- NAVBAR -->
     <nav>
         <div><strong>Simon Niyomugabo</strong></div>
-        <div>
+
+        <div class="nav-links">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -163,13 +170,13 @@
             <h3>SQL Retail Sales Analysis</h3>
             <p>Complex SQL queries analyzing sales performance, customer behavior, and product trends.</p>
             <a href="https://github.com/niyonzansabandi-ai/retail-sales-sql-analysis" class="btn">View Project</a>
-       </div>
+        </div>
 
         <div class="project-card">
             <h3>Power BI Sales Dashboard</h3>
             <p>An interactive Power BI dashboard analyzing retail sales trends, top products, and regional performance.</p>
             <a href="https://github.com/niyonzansabandi-ai/powerbi-sales-dashboard" class="btn">View Project</a>
-       </div>
+        </div>
 
     </section>
 
