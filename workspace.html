@@ -22,16 +22,22 @@
             border-bottom: 1px solid #ddd;
             padding: 15px 30px;
             z-index: 1000;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        nav .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
         nav a {
-            margin-left: 20px;
             text-decoration: none;
             color: #222;
             font-weight: bold;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -118,7 +124,8 @@
     <!-- NAVBAR -->
     <nav>
         <div><strong>Simon Niyomugabo</strong></div>
-        <div>
+
+        <div class="nav-links">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
