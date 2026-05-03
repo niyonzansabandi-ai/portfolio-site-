@@ -47,6 +47,7 @@ portfolio-site-/
 
 🚀 Featured Projects
 1. Customer Churn Analysis
+
 End‑to‑end analysis using Python, SQL, and visualization to identify churn drivers and support retention strategies.
 
 Highlights
@@ -60,6 +61,7 @@ Insights into customer behavior and risk factors
 Skills: Python, SQL, Pandas, Scikit‑learn, Visualization
 
 2. SQL Retail Sales Analysis
+
 A SQL‑driven project analyzing retail sales performance, customer behavior, and product trends.
 
 Highlights
