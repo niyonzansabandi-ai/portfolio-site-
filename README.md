@@ -1,96 +1,103 @@
-# Customer Churn Prediction
-A machine learning project focused on identifying customers at risk of leaving and providing actionable business insights.
-![Python](https://img.shields.io/badge/Python-3.9-blue)
-![Pandas](https://img.shields.io/badge/Library-Pandas-green)
-![Scikit--Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
-## Table of Contents
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Modeling Approach](#modeling-approach)
-- [Model Performance](#model-performance)
-- [Key Insights from Feature Importance](#key-insights-from-feature-importance)
-- [Business Recommendations](#business-recommendations)
-- [Conclusion](#conclusion)
-- [Technologies Used](#technologies-used)
-- [How to Run the Project](#how-to-run-the-project)
-- [Next Steps](#next-steps)
-# Customer Churn Prediction Project
+🌐 Personal Portfolio Website
+A modern, responsive portfolio website showcasing data analytics, machine learning, and business intelligence projects.
+This repository contains the full source code for the live site, including project pages, assets, and workspace structure.
 
-## Overview
-This project focuses on predicting customer churn using machine learning techniques. The goal is to identify customers who are likely to leave a subscription-based service so the business can take proactive retention actions. The project includes data cleaning, exploratory analysis, model development, evaluation, and business recommendations based on model insights.
+🔗 Live Website
+https://niyonzansabandi-ai.github.io/portfolio-site-
 
-## Dataset
-The dataset contains customer demographic information, service usage details, billing information, and whether the customer churned. Key features include tenure, monthly charges, total charges, contract type, payment method, and internet service type.
+📌 Overview
 
-## Modeling Approach
-Several models were trained and compared:
+This portfolio highlights end‑to‑end data projects across analytics, machine learning, SQL, and BI.
+It is designed for clarity, professionalism, and recruiter‑friendly navigation.
 
-- Logistic Regression  
-- Random Forest  
-- Balanced Random Forest  
+The site includes:
 
-Because churn is a minority class, accuracy alone is not sufficient. The primary focus was on recall for churners, ensuring the model correctly identifies customers who are at risk of leaving.
+Featured project cards
 
-## Model Performance
-The Balanced Random Forest model delivered the strongest performance:
+A dedicated workspace page
 
-- Recall for churners: 0.92  
-- Precision for churners: 0.84  
-- F1-score: 0.87  
-- Overall accuracy: 0.805  
+Clean HTML/CSS/JS structure
 
-This model significantly improved recall compared to the baseline Random Forest, which only achieved a recall of 0.45 for churners.
+Links to GitHub repos and LinkedIn
 
-## Key Insights from Feature Importance
-The most influential features in predicting churn were:
+Expandable project sections for future additions
 
-- Tenure  
-- Total charges  
-- Monthly charges  
-- Internet service type (fiber optic)  
-- Payment method (electronic check)  
+portfolio-site-/
+│
+├── index.html               # Main landing page
+├── workspace.html           # Workspace with project summaries
+│
+├── assets/
+│   ├── css/                 # Stylesheets
+│   ├── js/                  # Scripts
+│   └── images/              # Screenshots, icons, visuals
+│
+├── projects/                # Optional project folders
+│
+└── README.md                # Main repo documentation
 
-Customers with low tenure, low total charges, high monthly charges, fiber optic service, or electronic check payment method were more likely to churn.
+🚀 Featured Projects
+1. Customer Churn Analysis
+End‑to‑end analysis using Python, SQL, and visualization to identify churn drivers and support retention strategies.
 
-## Business Recommendations
-Based on the model results and feature importance analysis, the following actions are recommended:
+Highlights
 
-1. Focus on customers with low tenure through onboarding and early engagement programs.  
-2. Offer discounts or bundled pricing to customers with high monthly charges.  
-3. Investigate service quality issues for fiber optic customers.  
-4. Encourage customers using electronic check to switch to more stable payment methods.  
-5. Provide targeted support to customers with low total charges who may be new or under-engaged.  
-6. Use the model to generate weekly lists of high-risk customers for proactive retention outreach.
+Data cleaning, EDA, and feature engineering
 
-## Conclusion
-This project demonstrates a complete end-to-end machine learning workflow for predicting customer churn. The Balanced Random Forest model provides strong performance, especially in identifying customers at risk of leaving. The insights gained from the model support actionable business strategies that can reduce churn and improve customer retention.
+Machine learning model to predict churn
 
-## Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Scikit-learn  
-- Jupyter Notebook  
+Insights into customer behavior and risk factors
 
-## How to Run the Project
-1. Install required Python libraries.  
-2. Open the Jupyter Notebook.  
-3. Run the cells in order to reproduce the analysis and results.  
-## Next Steps
-- Add hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
-- Explore additional models such as XGBoost or LightGBM.
-- Deploy the model using a simple web app (Streamlit or Flask).
-- Automate weekly churn predictions for real-time business use.
-- Add SHAP values for deeper model interpretability.
+Skills: Python, SQL, Pandas, Scikit‑learn, Visualization
 
-## Contact
-If you would like to connect or discuss this project, feel free to reach out:
+2. SQL Retail Sales Analysis
+A SQL‑driven project analyzing retail sales performance, customer behavior, and product trends.
 
-- GitHub: https://github.com/niyonzansabandi-ai
-- LinkedIn: https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291
-- Portfolio Website: https://niyonzansabandi-ai.github.io/portfolio-site-/
+Highlights
 
+Complex SQL queries and transformations
 
+Customer segmentation and product performance insights
 
+Trend analysis using joins, CTEs, and aggregations
+
+Skills: SQL, Data Cleaning, Joins, Aggregations, CTEs
+
+3. Power BI Sales Dashboard
+
+An interactive Power BI dashboard analyzing retail sales trends, top products, and regional performance.
+
+Highlights
+
+Dynamic filtering and drill‑downs
+
+KPI cards and trend visuals
+
+Executive‑ready dashboard design
+
+Skills: Power BI, DAX, Data Modeling, Visualization
+
+🛠 Technologies Used
+Frontend: HTML, CSS, JavaScript
+
+Data & ML: Python, Pandas, NumPy, Scikit‑learn
+
+Visualization: Power BI, Matplotlib
+
+Tools: GitHub Pages, Jupyter Notebook
+
+📈 Future Enhancements
+Add project‑specific subpages
+
+Add animations and improved UI components
+
+Integrate interactive model demos (Streamlit)
+
+Expand workspace with new datasets and projects
+
+📬 Contact
+GitHub: https://github.com/niyonzansabandi-ai
+
+LinkedIn: https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291
+
+Portfolio: https://niyonzansabandi-ai.github.io/portfolio-site-
