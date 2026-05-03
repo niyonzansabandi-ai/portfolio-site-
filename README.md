@@ -1,5 +1,13 @@
 🌐 Personal Portfolio Website
 
+![HTML](https://img.shields.io/badge/HTML-20232A?style=for-the-badge&logo=html5&logoColor=E34F26)
+![CSS](https://img.shields.io/badge/CSS-20232A?style=for-the-badge&logo=css3&logoColor=1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-20232A?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Python](https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=3776AB)
+![SQL](https://img.shields.io/badge/SQL-20232A?style=for-the-badge&logo=postgresql&logoColor=336791)
+![PowerBI](https://img.shields.io/badge/Power_BI-20232A?style=for-the-badge&logo=powerbi&logoColor=F2C811)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-20232A?style=for-the-badge&logo=github&logoColor=white)
+
 A modern, responsive portfolio website showcasing data analytics, machine learning, and business intelligence projects.
 This repository contains the full source code for the live site, including project pages, assets, and workspace structure.
 
