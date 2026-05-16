@@ -10,119 +10,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f7f9fc;
-            color: #222;
-        }
-
-        /* NAVBAR */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;              /* FIXED */
-            box-sizing: border-box;   /* FIXED */
-            background: white;
-            border-bottom: 1px solid #ddd;
-            padding: 15px 30px;
-            z-index: 1000;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav .nav-links {
-            display: flex;
-            gap: 25px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #222;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-
-        nav a:hover {
-            color: #0077ff;
-        }
-
-        /* SECTIONS */
-        section {
-            padding: 100px 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            color: #111;
-        }
-
-        /* HERO */
-        #hero {
-            text-align: center;
-            padding-top: 140px;
-        }
-
-        #hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-
-        #hero p {
-            font-size: 20px;
-            color: #444;
-        }
-
-        /* PROJECT CARDS */
-        .project-card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            margin-bottom: 25px;
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-        }
-
-        .project-card a {
-            color: #0077ff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .project-card a:hover {
-            text-decoration: underline;
-        }
-
-        /* CONTACT BUTTONS */
-        .contact-buttons a {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 12px 20px;
-            background: #0077ff;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-buttons a:hover {
-            background: #005fcc;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #555;
-        }
-    </style>
+    <!-- EXTERNAL PROFESSIONAL STYLESHEET -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -142,18 +31,17 @@
 
     <!-- HERO -->
     <section id="hero">
-     <h1>Data Analyst & SQL Developer</h1>
-     <p>Turning raw data into clear, actionable insights.</p>
-   
+        <h1>Data Analyst & SQL Developer</h1>
+        <p>Turning raw data into clear, actionable insights.</p>
     </section>
 
     <!-- ABOUT -->
-   <section id="about">
-  <h2>About Me</h2>
-  <p>I’m a data analyst who specializes in SQL‑driven analytics, data cleaning, and building clear, decision‑ready insights. I enjoy working directly with relational data, transforming messy datasets, and creating dashboards that help teams understand performance and make informed decisions.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m a data analyst who specializes in SQL‑driven analytics, data cleaning, and building clear, decision‑ready insights. I enjoy working directly with relational data, transforming messy datasets, and creating dashboards that help teams understand performance and make informed decisions.</p>
 
-  <p>My focus is on SQL‑heavy analytics workflows, Python for deeper analysis and forecasting, Power BI dashboards for business reporting, and practical data storytelling that highlights real business impact.</p>
-</section>
+        <p>My focus is on SQL‑heavy analytics workflows, Python for deeper analysis and forecasting, Power BI dashboards for business reporting, and practical data storytelling that highlights real business impact.</p>
+    </section>
 
     <!-- SKILLS -->
     <section id="skills">
@@ -161,36 +49,35 @@
         <p><strong>SQL • Python • Power BI • Excel • Data Cleaning • ETL • Analytics</strong></p>
     </section>
 
-   <!-- PROJECTS -->
-<section id="projects">
-    <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
 
-    <div class="project-card">
-        <h3>Customer Churn Analysis</h3>
-        <p>End‑to‑end analysis using Python, SQL, and visualization to identify churn drivers.</p>
-        <a href="https://github.com/niyonzansabandi-ai/customer-churn-analysis" class="btn">View Project</a>
-    </div>
+        <div class="project-card">
+            <h3>Customer Churn Analysis</h3>
+            <p>End‑to‑end analysis using Python, SQL, and visualization to identify churn drivers.</p>
+            <a href="https://github.com/niyonzansabandi-ai/customer-churn-analysis" class="btn">View Project</a>
+        </div>
 
-    <div class="project-card">
-        <h3>SQL Retail Sales Analysis</h3>
-        <p>Complex SQL queries analyzing sales performance, customer behavior, and product trends.</p>
-        <a href="https://github.com/niyonzansabandi-ai/retail-sales-sql-analysis" class="btn">View Project</a>
-    </div>
+        <div class="project-card">
+            <h3>SQL Retail Sales Analysis</h3>
+            <p>Complex SQL queries analyzing sales performance, customer behavior, and product trends.</p>
+            <a href="https://github.com/niyonzansabandi-ai/retail-sales-sql-analysis" class="btn">View Project</a>
+        </div>
 
-    <div class="project-card">
-        <h3>Power BI Sales Dashboard</h3>
-        <p>An interactive Power BI dashboard analyzing retail sales trends, top products, and regional performance.</p>
-        <a href="https://github.com/niyonzansabandi-ai/powerbi-sales-dashboard" class="btn">View Project</a>
-    </div>
+        <div class="project-card">
+            <h3>Power BI Sales Dashboard</h3>
+            <p>An interactive Power BI dashboard analyzing retail sales trends, top products, and regional performance.</p>
+            <a href="https://github.com/niyonzansabandi-ai/powerbi-sales-dashboard" class="btn">View Project</a>
+        </div>
 
-    <div class="project-card">
-        <h3>Sales Forecasting Dashboard</h3>
-        <p>End‑to‑end retail analytics using SQL, Python, and Power BI to forecast sales trends.</p>
-        <a href="https://github.com/niyonzansabandi-ai/sales-forecasting-dashboard" class="btn">View Project</a>
-    </div>
+        <div class="project-card">
+            <h3>Sales Forecasting Dashboard</h3>
+            <p>End‑to‑end retail analytics using SQL, Python, and Power BI to forecast sales trends.</p>
+            <a href="https://github.com/niyonzansabandi-ai/sales-forecasting-dashboard" class="btn">View Project</a>
+        </div>
 
-</section>
-
+    </section>
 
     <!-- CONTACT -->
     <section id="contact">

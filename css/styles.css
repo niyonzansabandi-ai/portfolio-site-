@@ -1,144 +1,156 @@
-/* ------------------------------
+/* --------------------------------------------------
    GLOBAL STYLES
------------------------------- */
+-------------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
     background: #f7f9fc;
     color: #222;
     line-height: 1.6;
 }
 
-/* ------------------------------
-   HEADER
------------------------------- */
-header {
-    background: #1f2937;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
+h1, h2, h3 {
+    margin: 0 0 15px 0;
     font-weight: 700;
+    color: #111;
 }
 
-header p {
-    font-size: 1.2rem;
-    opacity: 0.85;
-}
-
-/* ------------------------------
-   PROJECT SECTION
------------------------------- */
-.projects {
+section {
+    padding: 100px 40px;
     max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
+    margin: auto;
 }
 
-.section-title {
-    font-size: 2rem;
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 18px 40px;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav strong {
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
     font-weight: 600;
-    margin-bottom: 25px;
-    color: #1f2937;
+    transition: color 0.2s ease;
 }
 
-/* ------------------------------
+.nav-links a:hover {
+    color: #0077ff;
+}
+
+/* --------------------------------------------------
+   HERO SECTION
+-------------------------------------------------- */
+
+#hero {
+    text-align: center;
+    padding-top: 160px;
+}
+
+#hero h1 {
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+
+#hero p {
+    font-size: 20px;
+    color: #444;
+}
+
+/* --------------------------------------------------
    PROJECT CARDS
------------------------------- */
+-------------------------------------------------- */
+
 .project-card {
     background: white;
-    padding: 25px;
-    margin: 25px 0;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .project-card h3 {
     margin-top: 0;
-    font-size: 1.4rem;
-    color: #111827;
+    font-size: 22px;
 }
 
 .project-card p {
+    color: #444;
     margin-bottom: 15px;
-    color: #374151;
 }
 
-/* ------------------------------
-   BUTTONS
------------------------------- */
-.btn {
+.project-card a {
     display: inline-block;
     padding: 10px 18px;
-    background: #2563eb;
+    background: #0077ff;
     color: white;
-    text-decoration: none;
     border-radius: 6px;
+    text-decoration: none;
     font-weight: 600;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: background 0.2s ease;
 }
 
-.btn:hover {
-    background: #1e4fcf;
-    transform: translateY(-2px);
+.project-card a:hover {
+    background: #005fcc;
 }
 
-/* ------------------------------
-   PROJECT DETAIL PAGE (if used)
------------------------------- */
-.project-container {
-    max-width: 800px;
-    margin: 80px auto;
-    padding: 20px;
+/* --------------------------------------------------
+   CONTACT BUTTONS
+-------------------------------------------------- */
+
+.contact-buttons {
+    margin-top: 20px;
 }
 
-.project-container h1 {
-    font-size: 2.4rem;
-    margin-bottom: 10px;
-}
-
-.project-container h2 {
-    margin-top: 30px;
-    font-size: 1.6rem;
-}
-
-.project-container a {
-    color: #2563eb;
+.contact-buttons a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 20px;
+    background: #0077ff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
     font-weight: 600;
+    transition: background 0.2s ease;
 }
 
-.project-container a:hover {
-    text-decoration: underline;
+.contact-buttons a:hover {
+    background: #005fcc;
 }
 
-/* ------------------------------
-   RESPONSIVE DESIGN
------------------------------- */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
 
-    .projects {
-        margin: 40px auto;
-    }
-
-    .project-card {
-        padding: 20px;
-    }
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #555;
+    margin-top: 40px;
 }
-
