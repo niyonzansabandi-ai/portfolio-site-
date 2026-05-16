@@ -21,12 +21,9 @@ h1, h2, h3 {
 
 section {
     padding: 100px 40px;
-    max-width: 900px; /* back to earlier width */
+    max-width: 900px;
     margin: auto;
-}
-
-#about p {
-    line-height: 1.7; /* cleaner but not too wide */
+    text-align: center; /* ensures headings + content center */
 }
 
 /* --------------------------------------------------
@@ -49,6 +46,7 @@ nav {
 
 nav strong {
     font-size: 20px;
+    white-space: nowrap;
 }
 
 /* Hide checkbox */
@@ -75,7 +73,7 @@ nav strong {
 /* Desktop nav links */
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 16px; /* reduced spacing to prevent pushing layout */
     flex-wrap: nowrap;
 }
 
@@ -88,21 +86,19 @@ nav strong {
 }
 
 .nav-links a:hover {
-    color: #059669; /* emerald */
+    color: #059669;
 }
 
 /* --------------------------------------------------
-   NAVBAR (MOBILE)
+   NAVBAR (EARLIER MOBILE BREAKPOINT)
 -------------------------------------------------- */
 
-@media (max-width: 820px) {
+@media (max-width: 1050px) {
 
-    /* Show hamburger */
     .hamburger {
         display: flex;
     }
 
-    /* Hide desktop links */
     .nav-links {
         position: absolute;
         top: 70px;
@@ -118,12 +114,10 @@ nav strong {
         display: none;
     }
 
-    /* Show menu when checkbox is checked */
     #menu-toggle:checked ~ .nav-links {
         display: flex;
     }
 
-    /* Hamburger animation */
     #menu-toggle:checked + .hamburger span:nth-child(1) {
         transform: rotate(45deg) translateY(8px);
     }
@@ -157,6 +151,16 @@ nav strong {
 }
 
 /* --------------------------------------------------
+   ABOUT SECTION
+-------------------------------------------------- */
+
+#about p {
+    line-height: 1.7;
+    max-width: 75ch;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------
    PROJECT CARDS
 -------------------------------------------------- */
 
@@ -165,8 +169,9 @@ nav strong {
     padding: 28px;
     border-radius: 12px;
     border: 1px solid #e5e7eb;
-    margin-bottom: 28px;
+    margin: 28px auto; /* centers cards */
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    max-width: 700px; /* keeps cards visually centered */
 }
 
 .project-card h3 {
@@ -204,7 +209,7 @@ nav strong {
 
 .contact-buttons a {
     display: inline-block;
-    margin-right: 15px;
+    margin: 8px;
     padding: 12px 20px;
     background: #059669;
     color: white;
