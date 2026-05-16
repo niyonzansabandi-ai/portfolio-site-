@@ -35,7 +35,7 @@ nav {
     width: 100%;
     background: white;
     border-bottom: 1px solid #e5e7eb;
-    padding: 18px 40px;
+    padding: 16px 24px; /* FIXED CLIPPING */
     z-index: 1000;
 
     display: flex;
@@ -49,18 +49,19 @@ nav strong {
 
 .nav-links {
     display: flex;
-    gap: 28px;
+    gap: 20px; /* FIXED CLIPPING */
 }
 
 .nav-links a {
     text-decoration: none;
     color: #222;
     font-weight: 600;
+    font-size: 15px; /* FIXED CLIPPING */
     transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #0077ff;
+    color: #059669; /* EMERALD */
 }
 
 /* --------------------------------------------------
@@ -108,7 +109,7 @@ nav strong {
 .project-card a {
     display: inline-block;
     padding: 10px 18px;
-    background: #0077ff;
+    background: #059669; /* EMERALD */
     color: white;
     border-radius: 6px;
     text-decoration: none;
@@ -117,7 +118,7 @@ nav strong {
 }
 
 .project-card a:hover {
-    background: #005fcc;
+    background: #047857; /* DARKER EMERALD */
 }
 
 /* --------------------------------------------------
@@ -132,7 +133,7 @@ nav strong {
     display: inline-block;
     margin-right: 15px;
     padding: 12px 20px;
-    background: #0077ff;
+    background: #059669; /* EMERALD */
     color: white;
     border-radius: 6px;
     text-decoration: none;
@@ -141,7 +142,7 @@ nav strong {
 }
 
 .contact-buttons a:hover {
-    background: #005fcc;
+    background: #047857; /* DARKER EMERALD */
 }
 
 /* --------------------------------------------------
