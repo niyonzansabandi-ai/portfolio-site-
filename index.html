@@ -6,20 +6,26 @@
     <title>Workspace | Simon Niyomugabo</title>
 
     <!-- CACHE-BUSTING -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-
-    <!-- EXTERNAL PROFESSIONAL STYLESHEET -->
-    <link rel="stylesheet" href="css/styles.css?v=3">
+    <link rel="stylesheet" href="css/styles.css?v=4">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- RESPONSIVE NAVBAR -->
     <nav>
-        <div><strong>Simon Niyomugabo</strong></div>
+        <div class="nav-left">
+            <strong>Simon Niyomugabo</strong>
+        </div>
 
+        <!-- Hamburger toggle -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Nav links -->
         <div class="nav-links">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
@@ -38,8 +44,8 @@
     <!-- ABOUT -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I’m a data analyst who specializes in SQL‑driven analytics, data cleaning, and building clear, decision‑ready insights. I enjoy working directly with relational data, transforming messy datasets, and creating dashboards that help teams understand performance and make informed decisions.</p>
-
+        <p>I’m a data analyst who specializes in SQL‑driven analytics, data cleaning, and building clear, decision‑ready insights.</p>
+        <p>I enjoy working directly with relational data, transforming messy datasets, and creating dashboards that help teams understand performance and make informed decisions.</p>
         <p>My focus is on SQL‑heavy analytics workflows, Python for deeper analysis and forecasting, Power BI dashboards for business reporting, and practical data storytelling that highlights real business impact.</p>
     </section>
 
@@ -51,7 +57,7 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-        <h2 class="section-title">Projects</h2>
+        <h2>Projects</h2>
 
         <div class="project-card">
             <h3>Customer Churn Analysis</h3>
@@ -76,16 +82,13 @@
             <p>End‑to‑end retail analytics using SQL, Python, and Power BI to forecast sales trends.</p>
             <a href="https://github.com/niyonzansabandi-ai/sales-forecasting-dashboard" class="btn">View Project</a>
         </div>
-
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>
-            Let’s talk about data, dashboards, and SQL.
-            I’m especially interested in roles focused on analytics and SQL‑heavy workflows.
-        </p>
+        <p>Let’s talk about data, dashboards, and SQL.</p>
+        <p>I’m especially interested in roles focused on analytics and SQL‑heavy workflows.</p>
 
         <div class="contact-buttons">
             <a href="mailto:niyonzansabandi@gmail.com">Email</a>
@@ -94,7 +97,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         Built by Simon Niyomugabo — Data Analyst & SQL Developer
     </footer>
