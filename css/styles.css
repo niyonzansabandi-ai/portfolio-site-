@@ -21,11 +21,10 @@ h1, h2, h3 {
 
 section {
     padding: 100px 40px;
-    max-width: 780px; /* reduced width for perfect centering */
+    max-width: 780px; /* perfect centered width */
     margin: 0 auto;
     text-align: center;
 }
-
 
 /* --------------------------------------------------
    NAVBAR (DESKTOP)
@@ -34,12 +33,20 @@ section {
 nav {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background: white;
     border-bottom: 1px solid #e5e7eb;
     padding: 16px 20px;
     z-index: 1000;
 
+    display: flex;
+    justify-content: center; /* centers navbar container */
+}
+
+.nav-inner {
+    width: 100%;
+    max-width: 780px; /* matches page width */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +81,7 @@ nav strong {
 /* Desktop nav links */
 .nav-links {
     display: flex;
-    gap: 16px; /* reduced spacing to prevent pushing layout */
+    gap: 16px;
     flex-wrap: nowrap;
 }
 
@@ -170,9 +177,9 @@ nav strong {
     padding: 28px;
     border-radius: 12px;
     border: 1px solid #e5e7eb;
-    margin: 28px auto; /* centers cards */
+    margin: 28px auto;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    max-width: 700px; /* keeps cards visually centered */
+    max-width: 700px;
 }
 
 .project-card h3 {
