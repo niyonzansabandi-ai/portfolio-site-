@@ -21,10 +21,11 @@ h1, h2, h3 {
 
 section {
     padding: 100px 40px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center; /* ensures headings + content center */
+    max-width: 780px; /* reduced width for perfect centering */
+    margin: 0 auto;
+    text-align: center;
 }
+
 
 /* --------------------------------------------------
    NAVBAR (DESKTOP)
