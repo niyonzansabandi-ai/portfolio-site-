@@ -35,7 +35,7 @@ nav {
     width: 100%;
     background: white;
     border-bottom: 1px solid #e5e7eb;
-    padding: 16px 24px; /* FIXED CLIPPING */
+    padding: 16px 18px; /* FIXED CLIPPING */
     z-index: 1000;
 
     display: flex;
@@ -49,14 +49,15 @@ nav strong {
 
 .nav-links {
     display: flex;
-    gap: 20px; /* FIXED CLIPPING */
+    gap: 18px; /* FIXED CLIPPING */
+    flex-wrap: nowrap; /* PREVENT WRAP */
 }
 
 .nav-links a {
     text-decoration: none;
     color: #222;
     font-weight: 600;
-    font-size: 15px; /* FIXED CLIPPING */
+    font-size: 14px; /* FIXED CLIPPING */
     transition: color 0.2s ease;
 }
 
