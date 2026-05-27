@@ -1,114 +1,138 @@
-🌐 Personal Portfolio Website
+<!-- ========================= -->
+<!--        BANNER AREA        -->
+<!-- ========================= -->
 
-![HTML](https://img.shields.io/badge/HTML-20232A?style=for-the-badge&logo=html5&logoColor=E34F26)
-![CSS](https://img.shields.io/badge/CSS-20232A?style=for-the-badge&logo=css3&logoColor=1572B6)
-![JavaScript](https://img.shields.io/badge/JavaScript-20232A?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![Python](https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=3776AB)
-![SQL](https://img.shields.io/badge/SQL-20232A?style=for-the-badge&logo=postgresql&logoColor=336791)
-![PowerBI](https://img.shields.io/badge/Power_BI-20232A?style=for-the-badge&logo=powerbi&logoColor=F2C811)
-![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-20232A?style=for-the-badge&logo=github&logoColor=white)
+<!-- Add your banner image here once ready -->
+<!-- Example: -->
+<!-- ![Portfolio Banner](images/banner.png) -->
 
-A modern, responsive portfolio website showcasing data analytics, machine learning, and business intelligence projects.
-This repository contains the full source code for the live site, including project pages, assets, and workspace structure.
+<h1 align="center">🌐 Personal Portfolio Website</h1>
+<p align="center">
+  A modern, responsive portfolio showcasing my work in Data Analytics, SQL, Machine Learning, Forecasting, Power BI, and Tableau.
+</p>
 
-🔗 Live Website
-https://niyonzansabandi-ai.github.io/portfolio-site-
+<p align="center">
+  <a href="https://niyonzansabandi-ai.github.io/portfolio-site-/">
+    <img src="https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://github.com/niyonzansabandi-ai">
+    <img src="https://img.shields.io/badge/GitHub_Profile-000000?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291">
+    <img src="https://img.shields.io/badge/LinkedIn_Profile-0A66C2?style=for-the-badge&logo=linkedin" />
+  </a>
+</p>
 
-📌 Overview
+---
 
-This portfolio highlights end‑to‑end data projects across analytics, machine learning, SQL, and BI.
-It is designed for clarity, professionalism, and recruiter‑friendly navigation.
+# 🏷️ Tech Stack & Tools
 
-The site includes:
+<p align="left">
+  <img src="https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=html5&logoColor=E34F26" />
+  <img src="https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=css3&logoColor=1572B6" />
+  <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=3776AB" />
+  <img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=postgresql&logoColor=336791" />
+  <img src="https://img.shields.io/badge/Power_BI-000000?style=for-the-badge&logo=powerbi&logoColor=F2C811" />
+  <img src="https://img.shields.io/badge/Tableau-000000?style=for-the-badge&logo=tableau&logoColor=E97627" />
+  <img src="https://img.shields.io/badge/GitHub_Pages-000000?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
-Featured project cards
+---
 
-A dedicated workspace page
-
-Clean HTML/CSS/JS structure
-
-Links to GitHub repos and LinkedIn
-
-Expandable project sections for future additions
+# 📁 Repository Structure
 
 portfolio-site-/
-│
-├── index.html               # Main landing page
-├── workspace.html           # Workspace with project summaries
-│
-├── assets/
-│   ├── css/                 # Stylesheets
-│   ├── js/                  # Scripts
-│   └── images/              # Screenshots, icons, visuals
-│
-├── projects/                # Optional project folders
-│
-└── README.md                # Main repo documentation
+│── index.html
+│── style.css
+└── README.md
 
-🚀 Featured Projects
-1. Customer Churn Analysis
 
-End‑to‑end analysis using Python, SQL, and visualization to identify churn drivers and support retention strategies.
+---
 
-Highlights
+# 🚀 Featured Projects
 
-Data cleaning, EDA, and feature engineering
+<details>
+<summary><strong>1. Customer Churn Analysis</strong> 📊</summary>
 
-Machine learning model to predict churn
+**Repo:** https://github.com/niyonzansabandi-ai/customer-churn-analysis  
 
-Insights into customer behavior and risk factors
+- Data cleaning, EDA, and feature engineering  
+- ML model predicting customer churn  
+- Insights into customer behavior and retention  
 
-Skills: Python, SQL, Pandas, Scikit‑learn, Visualization
+**Skills:** Python, SQL, Pandas, Scikit‑learn  
+</details>
 
-2. SQL Retail Sales Analysis
+---
 
-A SQL‑driven project analyzing retail sales performance, customer behavior, and product trends.
+<details>
+<summary><strong>2. SQL Retail Sales Analysis</strong> 🛒</summary>
 
-Highlights
+**Repo:** https://github.com/niyonzansabandi-ai/sql-retail-sales-analysis  
 
-Complex SQL queries and transformations
+- Complex joins, CTEs, aggregations  
+- Customer segmentation  
+- Product performance & trend analysis  
 
-Customer segmentation and product performance insights
+**Skills:** SQL, Data Cleaning, Query Optimization  
+</details>
 
-Trend analysis using joins, CTEs, and aggregations
+---
 
-Skills: SQL, Data Cleaning, Joins, Aggregations, CTEs
+<details>
+<summary><strong>3. Power BI Sales Dashboard</strong> 📈</summary>
 
-3. Power BI Sales Dashboard
+**Repo:** https://github.com/niyonzansabandi-ai/powerbi-sales-dashboard  
 
-An interactive Power BI dashboard analyzing retail sales trends, top products, and regional performance.
+- KPI cards, drill‑downs, dynamic filters  
+- Regional & product performance  
+- Executive‑ready visual design  
 
-Highlights
+**Skills:** Power BI, DAX, Data Modeling  
+</details>
 
-Dynamic filtering and drill‑downs
+---
 
-KPI cards and trend visuals
+<details>
+<summary><strong>4. Sales Forecasting Dashboard</strong> 📉</summary>
 
-Executive‑ready dashboard design
+**Repo:** https://github.com/niyonzansabandi-ai/sales-forecasting-dashboard  
 
-Skills: Power BI, DAX, Data Modeling, Visualization
+- ARIMA / Prophet models  
+- Trend & seasonality analysis  
+- Forecasting future sales performance  
 
-🛠 Technologies Used
-Frontend: HTML, CSS, JavaScript
+**Skills:** Python, Statsmodels, Forecasting  
+</details>
 
-Data & ML: Python, Pandas, NumPy, Scikit‑learn
+---
 
-Visualization: Power BI, Matplotlib
+<details>
+<summary><strong>5. Tableau Retail Dashboard</strong> 📊</summary>
 
-Tools: GitHub Pages, Jupyter Notebook
+**Repo:** https://github.com/niyonzansabandi-ai/tableau-retail-dashboard  
 
-📈 Future Enhancements
-Add project‑specific subpages
+- Filters, drill‑downs, clean layout  
+- Regional & product insights  
+- Professional dashboard design  
 
-Add animations and improved UI components
+**Skills:** Tableau, Data Visualization  
+</details>
 
-Integrate interactive model demos (Streamlit)
+---
 
-Expand workspace with new datasets and projects
+# 📈 Future Enhancements
 
-📬 Contact
-GitHub: https://github.com/niyonzansabandi-ai
+- Add dedicated project subpages  
+- Add animations & UI improvements  
+- Add Streamlit interactive demos  
+- Expand workspace with new datasets  
 
-LinkedIn: https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291
+---
 
-Portfolio: https://niyonzansabandi-ai.github.io/portfolio-site-
+# 📬 Contact
+
+**GitHub:** https://github.com/niyonzansabandi-ai  
+**LinkedIn:** https://www.linkedin.com/in/nzansabandi-niyomugabo-5a28b7291  
+**Portfolio:** https://niyonzansabandi-ai.github.io/portfolio-site-/
