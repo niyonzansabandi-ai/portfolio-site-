@@ -122,14 +122,18 @@ portfolio-site-/
 
 ---
 
-# 📈 Future Enhancements
+<details>
+<summary><strong>6. Customer Segmentation Project</strong> 👥</summary>
 
-- Add dedicated project subpages  
-- Add animations & UI improvements  
-- Add Streamlit interactive demos  
-- Expand workspace with new datasets  
+**Repo:** https://github.com/niyonzansabandi-ai/Customer-segmentation-project
 
----
+- Segment distribution analysis  
+- Spend, frequency, and loyalty metrics  
+- Clean Tableau dashboard  
+- SQL + Python end-to-end workflow  
+
+**Skills:** SQL, Python, Tableau, Data Analysis
+</details>
 
 # 📬 Contact
 
